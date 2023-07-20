@@ -426,8 +426,8 @@ header .menu_header .mobile_sh {
 	width: 100%;
 	margin-top: 50px;
 	position: absolute;
-	right: 0;
-	bottom: 0;
+	right: 150px;
+	bottom: -25px;
 }
 
 .ActiveUsers {
