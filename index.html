@@ -39,10 +39,12 @@
                             </a>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav  ml-auto menu-links">
-                                    <li class="nav-item"><a class="nav-link" href="/home/#aboutus">About us</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/home/#features">Features</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/home/#roadmap">Road map</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/home/#community">Community</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/home.html#features">Features</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="/home.html#roadmap">Road map</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/home.html#community">Community</a>
+                                    </li>
                                     <li class="nav-item"><a class="nav-link" href="/contact.html">Contact us</a></li>
                                 </ul>
                                 <!-- <ul class="navbar-nav ms-auto menu-links">
@@ -66,26 +68,18 @@
     <section class="BannerSection BannerHomeSection">
         <div class="VideoBxHide">
             <div class="VideoBx">
-                <video id="sub_vimeo_iframe04" autoplay muted id="myVideo" width="500" height="300" controls>
-                    <source src="img/videoplayback.mp4" type="video/mp4">
-                    <source src=img/videoplayback.mp4" type="video/ogg">Your browser does not support HTML5 video.
-                </video>
+                <!-- <video id="sub_vimeo_iframe04" autoplay muted id="myVideo" width="500" height="300">
+                    <source src="https://www.youtube.com/embed/uYPbbksJxIg" type="video/mp4">
+                    <source src="img/videoplayback.mp4" type="video/ogg">Your browser does not support HTML5 video.
+                </video> -->
+                <iframe id="sub_vimeo_iframe04" allow="autoplay" frameborder="0" width="560" height="315"
+                    src="https://www.youtube.com/embed/uYPbbksJxIg?autoplay=1&mute=1&controls=0&loop=1&playlist=uYPbbksJxIg&enablejsapi=1"></iframe>
+
                 <!--                                     <iframe id="sub_vimeo_iframe04" width="560" height="315" src="https://www.youtube.com/embed/kHk-Zh_4W7c?mute=1&autoplay=1;controls=0&amp;start=80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
                 <!-- <iframe id="sub_vimeo_iframe04" src="https://player.vimeo.com/video/796182984?h=d7b437822d&amp;background=1&amp;"  ></iframe> -->
 
             </div>
-            <div class="sound-btn-container">
-                <div class="btn-wrapper">
-                    <div id="sound_on_btn2" class="main_vi_btn2 main_vi_btn1 active ">
-                        <img src="img/sound_off_icon.svg">
-                    </div>
-                    <div id="sound_off_btn2" class="main_vi_btn2 main_vi_btn3 active ">
-                        <lottie-player id="sound_off_lottie"
-                            src="https://lottie.host/1dab3611-fb4a-46e9-8165-ca4d590f604d/iPtAgh4rHk.json"
-                            background="transparent" speed="1.5" loop="" autoplay=""></lottie-player>
-                    </div>
-                </div>
-            </div>
+
             <!-- <div id="sound_on_btn2" class="main_vi_btn2 main_vi_btn1 active ">
                 <img src="img/sound_off_icon.svg">
             </div>
@@ -95,6 +89,22 @@
                     background="transparent" speed="1.5" loop="" autoplay=""></lottie-player>
             </div> -->
 
+        </div>
+        <div class="sound-btn-container">
+            <div class="btn-wrapper">
+                <button id="sound_btn">
+
+                    <div id="sound_on_btn2" class="main_vi_btn2 main_vi_btn1 active ">
+                        <img src="img/sound_off_icon.svg">
+                    </div>
+                    <div id="sound_off_btn2" class="main_vi_btn2 main_vi_btn3 active ">
+                        <lottie-player id="sound_off_lottie"
+                            src="https://lottie.host/1dab3611-fb4a-46e9-8165-ca4d590f604d/iPtAgh4rHk.json"
+                            background="transparent" speed="1.5" loop="" autoplay=""></lottie-player>
+                    </div>
+                </button>
+
+            </div>
         </div>
         <div class="bammer-txt">
             <div class="VideoBxMain">
@@ -106,17 +116,20 @@
                             <h3>Welcome to</h3>
                             <h1><span>LOKAVERSE</span></h1>
                             <p>Blurring the lines between Virtual & Reality</p>
-                            <a class="btn btn-primary btn-default" href="home.html"><span>Explore
-                                    now</span></a>
+                            <div class="default-btn-wrapper">
+                                <a class="btn btn-primary btn-default" href="home.html"><span>Explore
+                                        now</span></a>
+                            </div>
 
                             <div class="HomeBu">
 
                                 <div class="BannerSocial d-none d-lg-block">
                                     <a href="#" class="facebook-icon"><img src="img/discord.svg" alt="icon"></a>
                                     <a href="#" class="facebook-icon"><img src="img/pinterest.svg" alt="icon"></a>
-                                    <a href="#" class="facebook-icon"><img src="img/facebook.svg" alt="icon"></a>
-                                    <a href="#" class="twitter-icon"><img src="img/twitter.svg" alt="icon"></a>
-                                    <a href="#" class="instagram-icon"><img src="img/instagram.svg" alt="icon"></a>
+                                    <a href="#" class="facebook-icon"><img height="23" src="img/facebook.svg"
+                                            alt="icon"></a>
+                                    <a href="#" class="facebook-icon"><img src="img/twitter.svg" alt="icon"></a>
+                                    <a href="#" class="facebook-icon"><img src="img/instagram.svg" alt="icon"></a>
                                 </div>
                             </div>
                         </div>
@@ -130,28 +143,50 @@
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/lottie-player.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script>
+        var player
+        function onYouTubeIframeAPIReady() {
+            console.log("hello")
 
+            player = new YT.Player('sub_vimeo_iframe04', {
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+        function onPlayerStateChange() {
+            console.log("my state changed");
+        }
+        function onPlayerReady() {
+            console.log("hey Im ready");
+            //do whatever you want here. Like, player.playVideo();
+        }
+
+        document.getElementById("sound_btn").addEventListener('click', function (event) {
+            console.log("mute");
+
+            if (player.isMuted()) {
+                player?.unMute();
+                // $("#sound_on_btn2").hide();
+                // $("#sound_off_btn2").show();
+            } else {
+                player?.mute();
+            }
+        });
+    </script>
+    <script>
         jQuery(document).ready(function ($) {
             vimeo_play_and_stop();
 
             function vimeo_play_and_stop() {
 
-                var f = $("#sub_vimeo_iframe04");
 
-                if (!f || !f.attr("src"))
-                    return;
-
-                var url = f.attr("src").split("?")[0];
 
                 $("#sound_on_btn2").click(function () {
 
-                    var data = {
-                        method: "setVolume",
-                        value: 1
-                    }
 
-                    f[0].contentWindow.postMessage(JSON.stringify(data), url);
 
                     $("#sound_on_btn2").hide();
                     $("#sound_off_btn2").show();
@@ -160,12 +195,7 @@
 
                 $("#sound_off_btn2").click(function () {
 
-                    var data = {
-                        method: "setVolume",
-                        value: 0
-                    };
 
-                    f[0].contentWindow.postMessage(JSON.stringify(data), url);
 
                     $("#sound_on_btn2").show();
                     $("#sound_off_btn2").hide();

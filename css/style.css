@@ -7,7 +7,7 @@ body {
 	font-size: 14px;
 	width: 100%;
 	overflow-x: hidden;
-	/* background-color: #101826; */
+	background-color: #101826;
 }
 
 img {
@@ -451,6 +451,10 @@ header .menu_header .mobile_sh {
 	margin: 0 5px;
 }
 
+.facebook-icon-small {
+	height: 23px;
+}
+
 .ActiveUsers h4 {
 	color: #8d9dbb;
 	font-family: 'sackers_gothic_light_atRg';
@@ -494,7 +498,7 @@ header .menu_header .mobile_sh {
 	text-align: left;
 	margin-top: 50px;
 	position: relative;
-	z-index: 999;
+	z-index: 5;
 }
 
 .home-banner-txt p {
@@ -619,9 +623,6 @@ header .menu_header .mobile_sh {
 	display: none;
 }
 
-.BannerSection {
-	height: 100vh;
-}
 
 
 /*.BannerSection .carousel-indicators {bottom: 190px;left: auto;margin-right: 9%; }*/
@@ -950,6 +951,7 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.26), 0px 0px 93px rgba(0, 58, 204, 0.28
 
 .home-banner-txt .btn-default {
 	margin-top: 40px;
+
 }
 
 .home-banner-txt3 {
@@ -1577,7 +1579,10 @@ a.ReadBtn img,
 .footer_social a.facebook-icon {
 	border-left: none;
 	border-right: none;
+
 }
+
+
 
 .footer_center .list-unstyled {
 	padding-left: 0;
@@ -2009,15 +2014,16 @@ a.ReadBtn img,
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 500;
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 	/* background: #000; */
 }
 
 .sound-btn-container .btn-wrapper {
 	aspect-ratio: 16/9;
 	width: 100%;
+
 	/* background-color: #2a93e8; */
 	position: relative;
 }
@@ -2036,6 +2042,7 @@ a.ReadBtn img,
 	backdrop-filter: blur(5px);
 	cursor: pointer;
 	transition: all 0.8s ease-out;
+	z-index: 1100;
 }
 
 .main_vi_btn2:hover {
@@ -2161,14 +2168,18 @@ a.ReadBtn img,
 	background: #000;
 }
 
+.BannerSection {
+	overflow: hidden;
+}
+
 .BannerSection #sub_vimeo_iframe04 {
 	position: absolute;
-	top: 0;
-	left: -1%;
-	width: 102%;
-	height: 113%;
+	top: -16%;
+	left: 0%;
+	width: 108%;
+	height: 115%;
 	opacity: 0.5;
-	margin-top: -65px;
+	/* margin-top: -65px; */
 
 }
 
@@ -2233,7 +2244,7 @@ a.ReadBtn img,
 	position: absolute;
 	left: 36%;
 	bottom: 140px;
-	z-index: 11000;
+	z-index: 1200;
 	-moz-transition: all 2s ease;
 	-o-transition: all 2s ease;
 	-webkit-transition: all 2s ease;
@@ -2242,6 +2253,8 @@ a.ReadBtn img,
 
 .VideoBannerTxtActive .home-banner-txt .btn-default {
 	bottom: -15px;
+	position: absolute;
+	z-index: 999 !important;
 }
 
 .BannerHomeSection .VideoBannerTxtActive .home-banner-txt h3 {
