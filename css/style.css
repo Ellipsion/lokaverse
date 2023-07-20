@@ -1994,6 +1994,10 @@ a.ReadBtn img,
 
 }
 
+.VideoBannerTxtActive .VideoBxMain {
+	background-color: #000;
+}
+
 .VideoBannerTxt .container,
 .VideoBannerTxt {
 	height: 100%;
