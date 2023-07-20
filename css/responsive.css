@@ -956,6 +956,8 @@
 
 	.BannerHomeSection .bammer-txt {
 		padding: 50px 0 0;
+		max-height: 100vh;
+		overflow: hidden;
 	}
 
 	.VideoBannerTxt .home-banner-txt .btn-default {
