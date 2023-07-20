@@ -1011,11 +1011,7 @@
 	}
 
 	.btn-default span {
-		display: inline-block;
-		transition: 0.5s;
-		position: initial;
-		left: 0;
-		top: 17px;
+		left: 26%;
 		transform: none;
 	}
 }

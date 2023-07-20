@@ -426,7 +426,7 @@ header .menu_header .mobile_sh {
 	width: 100%;
 	margin-top: 50px;
 	position: absolute;
-	right: 150px;
+	right: 10%;
 	bottom: -25px;
 }
 
@@ -541,7 +541,6 @@ header .menu_header .mobile_sh {
 	border-radius: 0px;
 	font-size: 14px;
 	margin-top: 20px;
-	padding: 17px 0;
 	background: transparent;
 	position: relative;
 	width: 320px;
@@ -588,7 +587,11 @@ header .menu_header .mobile_sh {
 	display: inline-block;
 	transition: 0.5s;
 	position: absolute;
+	display: flex;
+	align-items: center;
 	left: 50%;
+	top: 0;
+	height: 60px;
 	/* top: 17px; */
 	transform: translate(-50%, 0);
 }
@@ -2179,7 +2182,7 @@ a.ReadBtn img,
 	left: 0%;
 	/* width: 108%; */
 	height: 100vh;
-	opacity: 0.5;
+	opacity: 1;
 
 }
 
