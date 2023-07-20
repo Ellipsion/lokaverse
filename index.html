@@ -145,6 +145,14 @@
     <script src="js/lottie-player.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
+        // assets loader
+        var downloadingImage = new Image();
+        downloadingImage.onload = function () {
+            console.log("loaded hover image")
+        };
+        downloadingImage.src = "../img/button-img-hover.svg";
+    </script>
+    <script>
         var player
         function onYouTubeIframeAPIReady() {
             console.log("hello")
