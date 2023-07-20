@@ -771,6 +771,10 @@
 		opacity: 0.2;
 	}
 
+	.BannerHomeSection {
+		background-color: #000;
+	}
+
 	.BannerHomeSection .home-banner-txt h3 {
 		font-size: 21px;
 		text-align: center
@@ -952,6 +956,7 @@
 		border-radius: 0;
 		background: #000;
 		height: 100%;
+		overflow: hidden;
 	}
 
 	.BannerHomeSection .bammer-txt {
