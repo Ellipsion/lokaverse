@@ -1,0 +1,106 @@
+.owl-theme .owl-controls {  text-align:center; -webkit-tap-highlight-color:transparent }
+.owl-theme .owl-controls .owl-nav [class*=owl-] {font-size:0px;width:10px; height:16px;background:#d6d6d6;display:inline-block;cursor:pointer;}
+.owl-theme .owl-controls .owl-nav [class*=owl-]:hover {background:#869791;color:#fff;text-decoration:none}
+.owl-theme .owl-controls .owl-nav .disabled { opacity:.5; cursor:default }
+.owl-theme .owl-dots .owl-dot { display:inline-block; zoom:1; *display:inline}
+.owl-theme .owl-dots .owl-dot span { width:10px; height:10px; margin:5px 4px; background:#fff; display:block; -webkit-backface-visibility:visible; 
+               -webkit-transition:opacity 200ms ease; -moz-transition:opacity 200ms ease; -ms-transition:opacity 200ms ease; -o-transition:opacity 200ms ease; 
+               transition:opacity 200ms ease; -webkit-border-radius:0%; -moz-border-radius:0%; border-radius:100% ; border:none}
+.owl-theme .owl-dots .owl-dot.active span { background:#ffbd30; width: 10px; height: 10px; border:none }
+/*.owl-nav {bottom: 215px;position: relative;}*/
+.owl-dot { display:none !important; }
+.owl-nav {position: absolute;top: -45px; right:0;}
+
+/*-----------app_slider---------*/
+#app_slider5 .owl-dot{display: inline-block !important;}
+#app_slider .owl-dot {display: none !important; }
+
+#ReallifedetailMobile .owl-nav{display: none !important; }
+#slide-roadmap .owl-nav {right: 0;position: absolute;top: -90px;width: 150px;}
+
+#ReallifedetailMobile .owl-next,
+#slide-roadmap .owl-next{ position: absolute; left: 10px;top: 0%;background: url(../img/left-arrow.svg) no-repeat left top; width: 50px;
+	height: 50px;border-radius: 0%;line-height: 47px;-webkit-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;background-size: 100%;    filter: grayscale(100%);}
+#ReallifedetailMobile .owl-next:hover,
+#slide-roadmap .owl-next:hover{ background: url(../img/left-arrow.svg) no-repeat left top;background-size: 100%;    filter: grayscale(0%);}
+
+#slide-roadmap .owl-nextd:before{content: "\f104";font-family: 'FontAwesome';position: absolute;left: 0;top: 0;color: #858585;font-size: 30px;width: 100%;
+text-align: center;}
+#ReallifedetailMobile .owl-prev,
+#slide-roadmap .owl-prev {position: absolute;right: 10px;top: 0%;background: url(../img/right-arrow.svg) no-repeat left top;width: 50px;
+	height: 50px;border-radius: 0%;line-height: 47px;-webkit-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;background-size: 100%;    filter: grayscale(100%);}
+
+#ReallifedetailMobile .owl-prev:hover,
+#slide-roadmap .owl-prev:hover {background: url(../img/right-arrow.svg) no-repeat left top;background-size: 100%;    filter: grayscale(0%);}
+
+#slide-roadmap .owl-prevs::before {content: "\f105";font-family: 'FontAwesome';position: absolute;left: 0;top: 0;color: #858585;font-size: 30px;
+width: 100%;text-align: center;}
+
+
+
+#slide-testimonials .owl-nav {	display: none !important;}
+#slide-testimonials .owl-dots {
+	display: none !important;
+	text-align: right;
+	position: absolute;
+	right: 0;
+	bottom: -6px;
+}
+#slide-testimonials .owl-dot {display: inline-block !important;}
+#slide-testimonials .owl-dots .owl-dot.active span {
+	background: #ff4605;
+	opacity: 0.5
+}
+#slide-testimonials .owl-dots .owl-dot span {
+	width: 10px;
+	height: 10px;
+	margin: 5px 4px;
+	background: #959595;
+}
+/*-------------------pay_slider--------------------------*/
+@media only screen and (max-width:991px){
+}
+@media only screen and (max-width:767px){
+	#slide-roadmap .owl-nav {
+		display: none;
+	}
+	#ReallifedetailMobile .owl-dot,
+	#slide-roadmap .owl-dot {
+		display: inline-block !important;
+	}
+	#ReallifedetailMobile .owl-dots .owl-dot span ,
+	#slide-roadmap .owl-dots .owl-dot span {
+		width: 80px;
+		height: 80px;
+		margin:0;
+		background: url(../img/mobile-nav-button.svg) no-repeat left top;
+		-webkit-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+		background-size: 100%;
+	}
+	#ReallifedetailMobile .owl-dots .owl-dot.active span,
+	#slide-roadmap .owl-dots .owl-dot.active span {
+		background: url(../img/mobile-nav-button-active.svg) no-repeat left top;
+		width: 80px;
+		height: 80px;
+		border: none;
+		-webkit-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	}
+}
+@media only screen and (max-width:479px){
+}
+
+
+
+
+
+
+
+
