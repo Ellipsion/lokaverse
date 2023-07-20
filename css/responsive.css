@@ -963,6 +963,10 @@
 		transform: translate(-50%, 0);
 	}
 
+	.VideoBannerTxtActive .home-banner-txt .btn-default {
+		bottom: 0;
+	}
+
 	.menu_header .navbar-brand img {
 		width: 60px;
 	}
