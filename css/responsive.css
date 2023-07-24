@@ -654,6 +654,7 @@
 		text-align: left;
 	}
 
+
 	.home-banner-txt h3 {
 		font-size: 12px;
 		text-align: left;
@@ -821,7 +822,7 @@
 	.VideoBannerTxtActive .home-banner-txt p {
 		/* display: none; */
 		position: absolute;
-		top: 70%;
+		top: 60%;
 	}
 
 	.PlayButton {
@@ -989,7 +990,7 @@
 	}
 
 	.VideoBannerTxtActive .home-banner-txt .btn-default {
-		bottom: 0;
+		bottom: 20px;
 		z-index: 99999 !important;
 	}
 
