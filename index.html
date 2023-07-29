@@ -119,7 +119,7 @@
                             <h1><span>LOKAVERSE</span></h1>
                             <p>Blurring the lines between Virtual & Reality</p>
                             <div class="default-btn-wrapper">
-                                <a class="btn btn-primary btn-default" href="home.html"><span>Explore
+                                <a class="btn btn-primary btn-default" href="/home.html"><span>Explore
                                         now</span></a>
                             </div>
 
@@ -257,6 +257,18 @@
         $(".main_vi_btn3").click(function () {
             $(".VideoBxHide").removeClass("intro");
         });
+    </script>
+    <script>
+        $(document).ready(function () {
+            if (window.location.href.includes("github.io")) {
+                var anchors = document.getElementsByTagName("a");
+
+                for (var i = 0; i < anchors.length; i++) {
+                    const hrefSplit = anchors[i].href.split("/")
+                    anchors[i].href = "/lokaverse/" + hrefSplit[hrefSplit.length - 1]
+                }
+            }
+        })
     </script>
 </body>
 

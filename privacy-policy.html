@@ -640,6 +640,18 @@
             $(".VideoBxMain").removeClass("intro");
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            if (window.location.href.includes("github.io")) {
+                var anchors = document.getElementsByTagName("a");
+
+                for (var i = 0; i < anchors.length; i++) {
+                    const hrefSplit = anchors[i].href.split("/")
+                    anchors[i].href = "/lokaverse/" + hrefSplit[hrefSplit.length - 1]
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
