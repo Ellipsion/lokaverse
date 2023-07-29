@@ -90,11 +90,12 @@
                             <div class="row">
                                 <div class="col-xs-12 col-md-7 col-l-6">
                                     <div class="home-banner-txt">
-                                        <h3>about locavere</h3>
+                                        <h3>about lokaverse</h3>
                                         <h1>Dive into our <span>virtual<br> world</span> without the need<br> for
                                             expensive hardware </h1>
                                         <p>and Discover Your Second Life in Our<br> Hyper-Realistic Metaverse.</p>
-                                        <a class="btn btn-primary btn-default" href="#"><span>Read more</span></a>
+                                        <a class="btn btn-primary btn-default" href="/about.html"><span>Read
+                                                more</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +116,8 @@
                                         <h1>Travel the <br>
                                             <span>World</span>
                                         </h1>
-                                        <a class="btn btn-primary btn-default" href="#"><span>discover</span></a>
+                                        <a class="btn btn-primary btn-default"
+                                            href="/about.html"><span>discover</span></a>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-md-6 col-lg-7">
@@ -162,7 +164,8 @@
                                     <div class="home-banner-txt text-center">
                                         <h3>expedition</h3>
                                         <h1><span>Mars</span> and <span>Moon</span> <br>Expansion </h1>
-                                        <a class="btn btn-primary btn-default" href="#"><span>discover</span></a>
+                                        <a class="btn btn-primary btn-default"
+                                            href="/about.html"><span>discover</span></a>
                                     </div>
                                 </div>
 
@@ -1418,6 +1421,14 @@
         });
 
 
+    </script>
+    <script>
+        $(document).ready(function () {
+            console.log(window.location.href)
+            if (window.location.href.includes("http")) {
+                console.log($("a").map(element => { console.log(element) }))
+            }
+        })
     </script>
     <!-- <script>
 
