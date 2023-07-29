@@ -39,7 +39,7 @@
                             </a>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav  ml-auto menu-links">
-                                    <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/about.html">About us</a></li>
                                     <li class="nav-item"><a class="nav-link" href="/home.html#features">Features</a>
                                     </li>
                                     <li class="nav-item"><a class="nav-link" href="/home.html#roadmap">Road map</a></li>
@@ -52,7 +52,8 @@
                                             </ul> -->
                                 <div class="footer_social MobileShow">
                                     <a href="#" class="facebook-icon"><img src="img/discord.svg" alt="icon"></a>
-                                    <a href="#" class="facebook-icon"><img src="img/pinterest.svg" alt="icon"></a>
+                                    <a href="#" class="facebook-icon"><img src="img/telegram.png" width="36"
+                                            alt="icon"></a>
                                     <a href="#" class="facebook-icon"><img src="img/facebook.svg" alt="icon"></a>
                                     <a href="#" class="twitter-icon"><img src="img/twitter.svg" alt="icon"></a>
                                     <a href="#" class="instagram-icon"><img src="img/instagram.svg" alt="icon"></a>
@@ -128,7 +129,7 @@
 
                             <div class="BannerSocial d-none d-lg-block">
                                 <a href="#" class="facebook-icon"><img src="img/discord.svg" alt="icon"></a>
-                                <a href="#" class="facebook-icon"><img src="img/pinterest.svg" alt="icon"></a>
+                                <a href="#" class="facebook-icon"><img src="img/telegram.png" alt="icon"></a>
                                 <a href="#" class="facebook-icon"><img height="23" src="img/facebook.svg"
                                         alt="icon"></a>
                                 <a href="#" class="facebook-icon"><img src="img/twitter.svg" alt="icon"></a>
@@ -210,6 +211,9 @@
         //header animation on load
         $(document).ready(function () {
 
+            setTimeout(function () {
+                $(".BannerHomeSection").addClass("bg-black");
+            }, 3000);
             setTimeout(function () {
                 $(".VideoBannerTxt").addClass("VideoBannerTxtActive");
             }, 3000);
