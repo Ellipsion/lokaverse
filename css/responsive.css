@@ -768,8 +768,10 @@
 		width: fit-content;
 		display: flex;
 		/* white-space: nowrap; */
-		overflow-y: auto;
+		/* overflow-y: auto; */
 	}
+
+
 
 	.bammer-txt2 {
 		padding-top: 30px;

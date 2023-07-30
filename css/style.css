@@ -1844,6 +1844,10 @@ a.ReadBtn img,
 	margin-top: 80px;
 }
 
+.NewModel {
+	z-index: 10000;
+}
+
 .NewModel .modal-body p {
 	font-size: 16px;
 	color: #8D9DBB;
