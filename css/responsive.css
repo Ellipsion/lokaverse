@@ -735,12 +735,39 @@
 		width: 490px;
 	}
 
+	.About {
+		padding: 30px auto;
+		margin-top: 100px;
+		color: white;
+	}
+
+	.About p {
+		font-size: 12px;
+	}
+
+	.About .txt {
+		font-size: 16px;
+	}
+
+	.borderDiv img {
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		width: 50px;
+	}
+
+	.borderDiv {
+		color: #E2ECFF;
+	}
+
 	.Bannerimages {
 		margin-top: 140px;
 		position: relative;
 		z-index: 99;
+		min-width: 800px;
+		width: fit-content;
 		display: flex;
-		white-space: nowrap;
+		/* white-space: nowrap; */
 		overflow-y: auto;
 	}
 

@@ -1111,6 +1111,21 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.26), 0px 0px 93px rgba(0, 58, 204, 0.28
 	margin-top: 200px;
 }
 
+.borderDiv {
+	border: 3px solid #013ccc;
+	border-radius: 20px;
+	padding: 20px;
+	position: relative;
+	color: #E2ECFF;
+	margin-top: 100px;
+}
+
+.borderDiv img {
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+}
+
 .JionImg {
 	position: absolute;
 	left: 0;
@@ -1135,7 +1150,7 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.26), 0px 0px 93px rgba(0, 58, 204, 0.28
 	color: #8D9DBB;
 	font-size: 18px;
 	font-family: 'sackers_gothic_light_atRg';
-	padding: 30px 0 10px;
+	padding: 0;
 }
 
 a.ReadBtn {
