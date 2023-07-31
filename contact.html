@@ -185,7 +185,21 @@
                     <div class="col-xs-12 col-md-6 col-lg-6">
                         <div class="VideoBxMain">
                             <div class="VideoBx p-0">
-                                <iframe allow="autoplay" frameborder="0" width="720" height="480"
+                                <div class="btn-wrapper">
+                                    <button id="sound_btn">
+
+                                        <div id="sound_off_btn2" class="main_vi_btn2 main_vi_btn1  active ">
+                                            <img src="img/sound_off_icon.svg">
+                                        </div>
+                                        <div id="sound_on_btn2" class="main_vi_btn2 main_vi_btn3  active ">
+                                            <lottie-player id="sound_off_lottie" src="img/lottie/sound.json"
+                                                background="transparent" speed="1.5" loop=""
+                                                autoplay=""></lottie-player>
+                                        </div>
+                                    </button>
+
+                                </div>
+                                <iframe id="ytVideoEmbed" allow="autoplay" frameborder="0" width="720" height="480"
                                     src="https://www.youtube.com/embed/-I_XWon5Lo4?autoplay=1&mute=1&controls=0&loop=1&playlist=-I_XWon5Lo4&enablejsapi=1&vq=hd720"></iframe>
                                 <!--                                     <iframe id="sub_vimeo_iframe04" width="560" height="315" src="https://www.youtube.com/embed/kHk-Zh_4W7c?mute=1&autoplay=1;controls=0&amp;start=80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
                                 <!-- <iframe id="sub_vimeo_iframe04" src="https://player.vimeo.com/video/796182984?h=d7b437822d&amp;background=1&amp;"  ></iframe> -->
@@ -216,6 +230,7 @@
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/lottie-player.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/script.js"></script>
     <script>
         document.addEventListener('mousemove', parallax);
@@ -230,6 +245,43 @@
         }
     </script>
     <script>
+        // assets loader
+        var downloadingImage = new Image();
+        downloadingImage.onload = function () {
+            console.log("loaded hover image")
+        };
+        downloadingImage.src = "/img/button-img-hover.svg";
+    </script>
+    <script>
+        var player
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('ytVideoEmbed', {
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+        function onPlayerStateChange() {
+            console.log("my state changed");
+        }
+        function onPlayerReady() {
+            console.log("hey Im ready");
+            //do whatever you want here. Like, player.playVideo();
+            document.getElementById("sound_btn").addEventListener('click', function (event) {
+                console.log("mute");
+
+                if (player.isMuted()) {
+                    player.unMute();
+                } else {
+                    player.mute();
+                }
+            });
+        }
+
+
+    </script>
+    <script>
 
         jQuery(document).ready(function ($) {
 
@@ -237,21 +289,9 @@
 
             function vimeo_play_and_stop() {
 
-                var f = $("#sub_vimeo_iframe04");
 
-                if (!f || !f.attr("src"))
-                    return;
-
-                var url = f.attr("src").split("?")[0];
 
                 $("#sound_on_btn2").click(function () {
-
-                    var data = {
-                        method: "setVolume",
-                        value: 1
-                    }
-
-                    f[0].contentWindow.postMessage(JSON.stringify(data), url);
 
                     $("#sound_on_btn2").hide();
                     $("#sound_off_btn2").show();
@@ -259,13 +299,6 @@
                 });
 
                 $("#sound_off_btn2").click(function () {
-
-                    var data = {
-                        method: "setVolume",
-                        value: 0
-                    };
-
-                    f[0].contentWindow.postMessage(JSON.stringify(data), url);
 
                     $("#sound_on_btn2").show();
                     $("#sound_off_btn2").hide();
@@ -278,15 +311,7 @@
     <script>
 
 
-        $("#sub_vimeo_iframe04").prop('muted', true);
 
-        $(".main_vi_btn2").click(function () {
-            if ($("#sub_vimeo_iframe04").prop('muted')) {
-                $("#sub_vimeo_iframe04").prop('muted', false);
-            } else {
-                $("#sub_vimeo_iframe04").prop('muted', true);
-            }
-        });
     </script>
     <script>
         $(".main_vi_btn1").click(function () {
