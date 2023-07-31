@@ -1476,11 +1476,19 @@
     </script>
     <script>
         // assets loader
-        var downloadingImage = new Image();
-        downloadingImage.onload = function () {
-            console.log("loaded hover image")
-        };
-        downloadingImage.src = "/img/button-img-hover.svg";
+        $(document).ready(function () {
+            var downloadingImage = new Image();
+            downloadingImage.onload = function () {
+                console.log("loaded hover image")
+            };
+            var source = "/img/button-img-hover.svg";
+            if (window.location.href.includes("github.io")) {
+                source = "/lokaverse" + source;
+            }
+            downloadingImage.src = source;
+        })
+
+
     </script>
     <!-- <script>
 
